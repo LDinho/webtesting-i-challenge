@@ -17,7 +17,14 @@ describe('the enhancer', () => {
 
   describe('the repair function', () => {
 
-    it('should restore durability to 100', () => {
+    it('should return a new item', () => {
+      const newRock = { ...rock };
+      const result = repair(newRock);
+
+      expect(result).not.toBe(newRock);
+    });
+
+    it('should restore item durability to 100', () => {
 
       // arrange - example data
       const newSword = {...sword};
@@ -29,7 +36,6 @@ describe('the enhancer', () => {
       expect(result.durability).toBe(100);
 
     });
-
+    
   });
-
 });
