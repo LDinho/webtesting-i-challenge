@@ -18,24 +18,29 @@ describe('the enhancer', () => {
   describe('the repair function', () => {
 
     it('should return a new item', () => {
-      const newRock = { ...rock };
-      const result = repair(newRock);
+      const result = repair(rock);
 
-      expect(result).not.toBe(newRock);
+      expect(result).not.toBe(rock);
     });
 
     it('should restore item durability to 100', () => {
 
-      // arrange - example data
-      const newSword = {...sword};
+      // arrange - example data (this is already imported from items)
+
+      // Do not need to set new item object, just pass
+      //  the item directly in the repair function
 
       // act
-      const result = repair(newSword);
+
+      // Do not need to set new item object, just pass
+      //  the item directly in the repair function
+      const result = repair(sword);
 
       //assert
       expect(result.durability).toBe(100);
 
     });
-    
+
   });
+
 });
