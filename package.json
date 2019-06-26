@@ -1,0 +1,17 @@
+{
+  "name": "webtesting-i",
+  "version": "1.0.0",
+  "description": "Web Testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch --verbose"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "LDinho",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
