@@ -14,7 +14,7 @@ const rock = {
 const shoe = {
   name: "shoeless",
   durability: 15,
-  enhancement: 2
+  enhancement: 20
 };
 
 module.exports = {
